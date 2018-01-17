@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@drawable/ic_launcher" />
+
+    <SeekBar
+        android:id="@+id/sb_red"
+        android:max="255"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/sb_green"
+        android:max="255"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <SeekBar
+        android:max="255"
+        android:id="@+id/sb_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+     <SeekBar
+        android:max="255"
+        android:id="@+id/sb_saturability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     
+      <SeekBar
+        android:max="255"
+        android:id="@+id/sb_transparency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

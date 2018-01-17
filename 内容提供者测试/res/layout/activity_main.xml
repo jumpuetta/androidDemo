@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+       <Button
+        android:id="@+id/bt_getdata"
+        android:onClick="getData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="从内容提供者获取数据" />
+       
+       <Button
+        android:id="@+id/bt_getonedata"
+        android:onClick="getOneData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="从内容提供者获取一条数据" />
+
+       <Button
+           android:id="@+id/bt_deletedata"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:onClick="deleteData"
+           android:text="从内容提供者删除数据" />
+
+        <Button
+        android:id="@+id/bt_updatedata"
+        android:onClick="updateData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="从内容提供者更新数据" />
+        
+          <Button
+        android:id="@+id/bt_insertdata"
+        android:onClick="insertData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="从内容提供者插入数据" />
+
+</LinearLayout>

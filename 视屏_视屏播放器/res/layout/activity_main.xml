@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/filepath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/sdcard/oppo.mp4" />
+ <!--  http://10.129.67.177:8080/oppo.mp4-->
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/play"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:text="播放"    
+            />
+          
+           <Button 
+          android:id="@+id/stop"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:text="停止"    
+            />
+    </LinearLayout>
+    <!-- 双缓冲实现 -->
+    <SurfaceView 
+       android:id="@+id/surfaceView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        
+        />
+</LinearLayout>

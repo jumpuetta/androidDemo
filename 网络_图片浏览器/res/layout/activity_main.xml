@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <!-- 若显示指明高宽为0时 weight代表权重
+                      若高宽不为0时 weight代表渲染优先级  默认为0 值越大优先级越低
+       -->
+    <ImageView
+        android:layout_weight="10"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:id="@+id/imageview"
+      />
+    
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="15sp"
+        android:id="@+id/imagepath" 
+        android:text="http://f.hiphotos.baidu.com/image/w%3D2048/sign=c0745bf8a586c91708035539fd0571cf/0824ab18972bd40760446cfd79899e510fb3092a.jpg"
+        />
+    
+    <Button 
+        android:onClick="loadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagebtn" 
+        android:text="加载图片"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button0"
+        android:onClick="click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="隐式意图激活浏览器" />
+    
+     <Button
+        android:id="@+id/button1"
+        android:onClick="click2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="隐式意图激活界面二" />
+     
+     <Button
+        android:id="@+id/button2"
+        android:onClick="click3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="隐式意图激活系统发送短信界面" />
+
+</LinearLayout>

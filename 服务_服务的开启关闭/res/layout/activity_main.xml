@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:onClick="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启服务" />
+     <Button
+        android:onClick="stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭服务" />
+      <Button
+        android:onClick="bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定开启服务" />
+     <Button
+        android:onClick="unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解除绑定服务" />
+      <Button
+        android:onClick="change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用服务方法" />
+
+</LinearLayout>

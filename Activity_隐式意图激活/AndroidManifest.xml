@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.activityhiddenintent"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.android.activityhiddenintent.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.android.activityhiddenintent.OtherScreenActivity"
+            android:label="@string/app_name" >
+            <!-- 隐式意图的配置  如果配置多个意图过滤器  只需满足一个便可激活 -->
+            <intent-filter>
+                 <action android:name="android.intent.action.XXXX" /><!-- XXXX可自定义 -->
+                 <data android:scheme="ftp" android:mimeType="audio/mpeg"/><!-- 配置后代码中需要显示设置数据 -->
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

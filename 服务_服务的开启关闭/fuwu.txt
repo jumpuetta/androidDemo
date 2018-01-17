@@ -1,0 +1,8 @@
+服务只会被创建一次 如果服务已经创建了 并且没有销毁 
+多次调用 startService的方法 只会执行 onStartCommand() 和 onStart()方法
+
+服务停止 
+1.stopService() 
+2.程序管理器 手工的停止掉服务.
+
+onDestroy();

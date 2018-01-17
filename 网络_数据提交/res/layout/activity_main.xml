@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal" 
+        >
+       <TextView 
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="50dp"
+       android:gravity="center"
+       android:text="姓名："
+       />    
+       <EditText
+       android:id="@+id/et_username"
+       android:layout_width="0dp"
+       android:layout_weight="3"
+       android:layout_height="50dp"
+       android:hint="请输入用户名" 
+           />    
+    </LinearLayout>
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:orientation="horizontal" 
+     >
+      <TextView 
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="50dp"
+       android:gravity="center"
+       android:text="密码："
+       />
+
+      <EditText
+       android:id="@+id/et_password"
+       android:layout_width="0dp"
+       android:layout_weight="3"
+       android:layout_height="50dp"
+          >
+          <requestFocus />
+      </EditText>
+  
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_loginGet"
+        android:onClick="loginGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆(GET)" />
+    <Button
+        android:id="@+id/bt_loginPost"
+        android:onClick="loginPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆(POST)" />
+     <Button
+        android:id="@+id/bt_loginClientGet"
+        android:onClick="loginClientGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆(CLIENTGET)" />
+      <Button
+        android:id="@+id/bt_loginClientPost"
+        android:onClick="loginClientPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆(CLIENTPOST)" />
+
+</LinearLayout>

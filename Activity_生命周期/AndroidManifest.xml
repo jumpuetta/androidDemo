@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.lifecycle"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- 
+                    一般情况横顺屏变换、软键盘、屏幕大小变化会影响到activity生命周期
+        android:configChanges="orientation|keyboardHidden|screenSize"
+                    可通过配置android:configChanges参数来消除这些对activity生命周期的影响
+                    低版本系统对平板支持较弱，不配置screenSize也可以
+         -->
+        <activity
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:name="com.android.lifecycle.MainActivity"
+            android:label="@string/main_Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.android.lifecycle.SecondActivity"
+            android:label="@string/second_Activity" >
+        </activity>
+            <!-- 指定ThirdActivity主题为对话框   @android代表android系统里面的R文件 即系统里面的资源   -->        
+         <activity
+             android:theme="@android:style/Theme.Dialog"
+            android:name="com.android.lifecycle.ThirdActivity"
+            android:label="@string/third_Activity" >
+        </activity>
+        
+    </application>
+
+</manifest>

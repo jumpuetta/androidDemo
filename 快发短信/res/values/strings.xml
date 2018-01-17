@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">快发短信</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="people_number">接收者号码:</string>
+    <string name="message_content">请输入内容:</string>
+    <string name="bt_send">发送</string>
+
+</resources>
